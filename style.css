@@ -1,0 +1,147 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #0a0c1b;
+    color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 2.12em;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.heading span{
+    color: #a85cd6;
+}
+
+
+.numbers{
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+}
+
+.numbers span:first-child{
+    font-size: 21px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+.numbers span:last-child{
+color: hsla(0, 0%, 100%, 0.6);
+text-transform: uppercase;
+font-size: 11px;
+}
+
+.para{
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 90%;
+    font-size: 13.5px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(345px, 2fr) );
+    grid-template-rows: repeat(1, 396px);
+    margin-top: 12%;
+}
+
+.textarea{
+    background-color: #1c1938;
+    padding: 60px 80px 70px 60px; 
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+div .img{
+    background: url(./images/image-header-desktop.jpg);
+    width: 410px;
+    height: 396px;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+    background-size: cover;
+    filter: saturate(1) contrast(150%);  
+    
+}
+
+div .overlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 55%;
+}
+
+
+
+@media only screen and (max-width: 375px){
+
+          .container{
+              display: grid;
+              grid-template-columns: 328px;
+              grid-template-rows: 260px 260px 260px;
+          }
+
+
+          div .img{
+              background: url(./images/image-header-mobile.jpg);
+              width: 328px;
+              height: 260px;
+              grid-column: 1/2;
+              grid-row: 1/2;
+              background-size: cover;
+              border-radius: 10px 10px 0 0;
+          }
+
+          .textarea{
+              grid-column: 1/2;
+              grid-row: 2/4;
+              align-items: center;
+              font-size: 15px;
+              text-align: center;
+              padding: 20px;
+              border-radius: 0 0 10px 10px;
+          }
+
+
+          h1{
+              font-size: 2em;
+              width: 100%;
+              margin-bottom: 20px;
+          }
+
+          .para{
+              margin-left: 30px;
+              word-spacing: 2px;
+              line-height: 20px;
+          }
+
+
+          .numbers{
+              margin-top: 32.5px;
+              display: grid;
+              grid-template-columns: 150px;
+              grid-template-rows: 80px 80px 80px;
+              margin-left: 70px;
+              align-items: center;
+         }
+
+
+
+
+}
